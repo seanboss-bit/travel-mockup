@@ -63,6 +63,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 9%;
+  width: 100vw;
 }
 header .logo {
   font-size: 2.5rem;
@@ -431,9 +432,9 @@ header .logo {
   font-size: 2rem;
   font-weight: normal;
   color: #fff;
-  border-top: .1rem solid rgba(255, 255, 255, 0.3);
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
-.footer .credit span{
+.footer .credit span {
   color: var(--orange);
 }
 /* Login */
@@ -517,6 +518,9 @@ header .logo {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .contact .inputBox input {
     width: 100%;
   }
